@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Feedback</title>
+  <!DOCTYPE html>
+  <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!---- ==----- <link rel="stylesheet" href="reset.css">------>
+      
+      <style>
+      body {
+        font-family: poppins;
+        background-color: #090809;
+      }
+      
+      .container {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+      }
+      
+      h1 {
+        text-align: center;
+        color: #ccc;
+      }
+      
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+      
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        resize: vertical;
+      }
+      
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+    </head>
+    <body>
+      <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      
+  </head>
+  <body>
+    <div class="container">
+      <h1>WARNER BROS</h1>
+      <form action="submit_feedback.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        
+        <label for="movie">Movie:</label>
+        <select id="movie" name="movie" required>
+          <option value="">Select a movie</option>
+          <option value="evil dead rise">evil dead Rise</option>
+          <option value="shazam">shazam</option>
+          <option value="dune">Batman</option>
+        </select>
+        
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+          <option value="">Select a rating</option>
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="average">Average</option>
+          <option value="poor">Poor</option>
+        </select>
+        
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="5"></textarea>
+        
+        <input type="submit" value="Submit Feedback">
+      </form>
+    </div>
+  </body>
+  </html>
+    </body>
+  </html>
+    
