@@ -28,7 +28,7 @@ header nav{
   align-items: center;
   padding: 3px;
   top: 0;
-  position: fixed;
+  position:relative;
   z-index: 1;
 }
 

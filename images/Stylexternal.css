@@ -1,0 +1,328 @@
+
+/* styles.css */
+
+/* Reset default margin and padding */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  box-sizing: border-box;
+
+}
+body{
+  background:#0B0909;
+  min-height: 100;
+  position:relative;
+    z-index: 1;
+    right: 0;
+    padding: 2rem;
+}
+/* Header Styles */
+
+ 
+header nav{
+  width: 100%;
+  background-color:#0B0909;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  top: 0;
+  position:relative;
+  z-index: 1;
+}
+
+.logo{
+ 
+  height: 40px;
+  width: 50px;
+
+  
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  display: flex;
+  margin-right: 40px;
+  
+}
+
+nav ul li {
+  
+display: inline-block;
+  
+  
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 10px;
+  padding: 25px 28px;
+  font-weight: bold;
+ 
+}
+
+nav ul li a:hover{
+  transform: scale(1.1);
+  color: #252a47;
+  
+
+}
+
+nav.container{
+display: flex;
+float: left;
+right: 30px;
+/*top: 0;*/
+margin-right: 50px;
+}
+
+ form {
+  background:#fff;
+  width: 300px;
+  height: 40px;
+  display: flex;
+  border-radius: 30px;
+}
+
+form input{
+  flex: 1;
+  border: none;
+  outline:none;
+}
+
+form button{
+  background-color:transparent;
+  padding: 5px;
+  border: none;
+  outline: none;
+  color: #0B0909;
+  letter-spacing: 1px;
+  cursor: pointer;
+  
+}
+
+form .fa-magnifying-glass{
+
+  align-self: center;
+  padding: 5px  6px;
+  color: #0B0909;
+}
+
+
+
+.hero-banner .image-container{
+
+  overflow-x: auto;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  margin-top : 2%;
+ scrollbar-width: thin;
+ scrollbar-color:transparent transparent;
+ position: relative; /*added for positioning the arrows */
+ 
+
+}
+
+.hero-banner .image-container::-webkit-scrollbar{
+  width: 6px;
+  background-color: #fff;
+}
+
+.hero-banner .image-container::-webkit-scrollbar-thumb {
+ background-color: #fff;
+}
+
+.hero-banner .image-container img{
+ /* flex-shrink: 30px;*/
+  height: 400px;
+  object-fit: cover;
+  align-items: center;
+  object-position:top ;
+  overflow: hidden;
+}
+
+
+/*added styles for the scroll arrows*/
+
+.hero-banner.scroll-arrow {
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50);
+  width: 80px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+ .hero-banner.scroll-arrow fa-sharp fa-solid fa-angles-left{
+  left: 30px;
+  color: #f1f1f1;
+}
+
+.hero-banner.scroll-arrow fa-sharp fa-solid fa-angles-left{
+  right: 30px;
+}
+
+.main.navigation-bar {
+  background-color: #fff;
+  padding: 5px;
+}
+
+.main.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main.nav-list li {
+  margin-right: 20px;
+}
+
+.main.nav-list li:last-child {
+  margin-right: 0;
+}
+
+ main.nav-list li a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+main.nav-list li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+.dropdown {
+  position: relative;
+
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f1f1f1;
+  padding: 10px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+
+}
+
+.dropdown-menu li {
+  margin-bottom: 5px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+
+
+.main.image-container {
+  display: flex;
+  
+  
+}
+
+.main .image-container img {
+  
+ 
+   height: 300px;
+   width: 200px;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  position: relative;
+}
+.main .image-container img:hover{
+  transform: scale(1.1);
+}
+
+
+.main .image-container{
+
+  overflow-x: auto;
+  width: 100%;
+  display: flex;
+ scrollbar-width: thin;
+ scrollbar-color:transparent transparent;
+
+}
+
+.main .image-container::-webkit-scrollbar{
+  width: 6px;
+  background-color: transparent;
+}
+
+.main .image-container::-webkit-scrollbar-thumb {
+ background-color: transparent;;
+}
+.image-container .text{
+  width: 15%;
+  float: left;
+  padding: 5px;
+  margin-right: 15px;
+  background: #fff;
+
+}
+ 
+/* Footer Styles */
+footer  {
+  background: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+h2:hover{
+  color:#0B0909;
+}
+h2{
+  color: white;
+  margin-bottom: 10px;
+}
+footer  {
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #252a47;
+  display: grid;
+  z-index: -1;
+  padding: 15px;
+}
+footer {
+  align-items: baseline;
+ margin-right: 5%;
+ padding: 20px;
+
+}
+
+
+
